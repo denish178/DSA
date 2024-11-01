@@ -13,10 +13,10 @@ int searchInNearlySortedArray(vector<int>&nums, int target) {
     if(nums[mid] == target){
          return mid;
     }
-    if(nums[mid-1] == target){
+    if(mid-1 >=0 && nums[mid-1] == target){
       return mid-1;
     }
-    if(nums[mid+1] == target){
+    if(mid+1<nums.size() && nums[mid+1] == target){
       return mid+1;
     }
     else if(target > nums[mid]){
