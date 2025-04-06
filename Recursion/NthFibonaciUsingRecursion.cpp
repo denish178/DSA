@@ -21,3 +21,5 @@ int main() {
 
     return 0;
 }
+//TIME COMP :- O(2^N)
+//SPACE COMP :- O(N)
