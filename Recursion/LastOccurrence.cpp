@@ -2,7 +2,7 @@
 using namespace std;
 
 int findKeyIndex(int arr[], int i, int size, int key) {
-    if (i == size) {
+    if (i < 0) {
         return -1;  // Reached end and not found
     }
 
